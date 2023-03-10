@@ -41,8 +41,7 @@ function onInput(e) {
 
 function onSubmit(event) {
   event.preventDefault();
-  console.log(emailInput.value);
-  console.log(messageText.value);
+  console.log(JSON.parse(localStorage.getItem(FEEDBACK)));
   localStorage.clear();
   form.reset();
 }
